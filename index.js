@@ -31,10 +31,12 @@ function prependCat(name){
   return name_2
 }
 
-function removeFirstCat(name){
-  var cats= cats.slice(1)
-  return cats;
-}
+  function removeFirstCat() {
+    const newArray = cats.slice(1);
+    return newArray;
+  }
 
-
-
+  function removeLastCat(){
+    const newArray = cats.slice(0,cats.length-1);
+    return newArray;
+  }
